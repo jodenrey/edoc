@@ -398,14 +398,12 @@ CREATE TABLE IF NOT EXISTS `checkup_data` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`id`),
   KEY `appoid` (`appoid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
---
--- Add foreign key constraint for checkup_data
---
+-- REMOVED: Foreign key constraint section
+-- Changed engine to MyISAM to match appointment table
 
-ALTER TABLE `checkup_data`
-  ADD CONSTRAINT `checkup_data_appoid_fk` FOREIGN KEY (`appoid`) REFERENCES `appointment` (`appoid`) ON DELETE CASCADE ON UPDATE CASCADE;
+-- ...existing code...
 
 --
 -- Indexes for dumped tables
@@ -494,4 +492,4 @@ COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */; 
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
