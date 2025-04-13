@@ -38,30 +38,6 @@ This project provides an online system for booking and managing medical appointm
 *   JavaScript (likely)
 *   Composer (for PHP dependencies, e.g., TCPDF for PDF generation)
 
-## Setup and Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone <your-repository-url>
-    cd edoc-echanneling-main
-    ```
-2.  **Database Setup:**
-    *   Create a MySQL database (e.g., `edoc`).
-    *   Import the database schema from `sql_database_edoc.sql`:
-        ```bash
-        mysql -u <username> -p <database_name> < sql_database_edoc.sql
-        ```
-    *   Configure the database connection details (hostname, username, password, database name) in `connection.php`.
-3.  **Install PHP Dependencies:**
-    *   Make sure you have [Composer](https://getcomposer.org/) installed.
-    *   Run the following command in the project root directory:
-        ```bash
-        composer install
-        ```
-4.  **Web Server:**
-    *   Set up a web server (like Apache with XAMPP/WAMP/MAMP or Nginx) to point to the project's root directory (`c:\xampp\htdocs\edoc-echanneling-main` in your case).
-    *   Ensure PHP is correctly configured on your web server.
-
 ## Usage
 
 1.  Access the application through your web server (e.g., `http://localhost/edoc-echanneling-main/`).
