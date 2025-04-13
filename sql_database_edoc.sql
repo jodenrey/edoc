@@ -323,7 +323,7 @@ CREATE TABLE IF NOT EXISTS `checkup_data` (
   `bloodPressure` varchar(50) DEFAULT NULL,
   `pastMedical` varchar(10) DEFAULT NULL,
   `pastMedicalDesc` text DEFAULT NULL,
-  `development` varchar(10) DEFAULT NULL; 
+  `development` varchar(10) DEFAULT NULL,
   `developmentalHistory` varchar(10) DEFAULT NULL,
   `developmentalDesc` text DEFAULT NULL,
   `behavioralHealth` varchar(10) DEFAULT NULL,
